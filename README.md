@@ -3,8 +3,8 @@ python man in the middle
 
 ### I am not responsible for unlawful use of this code
 
-Pseudocode
-main<br>
+##Pseudocode<br>
+###main<br>
 Get arguments<br>
 Check arguments<br>
 set victim<br>
@@ -14,22 +14,22 @@ set website<br>
 launch arpspoof in its own thread<br>
 launch sniff<br><br>
 
-arpspoof<br>
+###arpspoof<br>
 thread loop sending arp responses to victim<br>
 thread loop sending arp responses to gateway<br><br>
 
-sniff<br>
+###sniff<br>
 open interface<br>
 capture traffic using filter for victim dns packets<br>
 when match, launch dnsspoof function<br><br>
 
-dnsspoof<br>
+###dnsspoof<br>
 decode dns packets to extract website domain name<br>
 create dns response with website domain name<br>
 send spoof dns to victim<br>
 print sent packet<br><br>
 
-Usage<br>
+## Usage<br>
 run<br>
 sudo ./arpspoof.py<br>
 and<br>
