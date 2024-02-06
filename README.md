@@ -4,39 +4,39 @@ python man in the middle
 ### I am not responsible for unlawful use of this code
 
 Pseudocode
-main
-Get arguments
-Check arguments
-set victim
-set gateway
-set interface
-set website
-launch arpspoof in its own thread
-launch sniff
+main<br>
+Get arguments<br>
+Check arguments<br>
+set victim<br>
+set gateway<br>
+set interface<br>
+set website<br>
+launch arpspoof in its own thread<br>
+launch sniff<br><br>
 
-arpspoof
-thread loop sending arp responses to victim
-thread loop sending arp responses to gateway
+arpspoof<br>
+thread loop sending arp responses to victim<br>
+thread loop sending arp responses to gateway<br><br>
 
-sniff
-open interface
-capture traffic using filter for victim dns packets
-when match, launch dnsspoof function
+sniff<br>
+open interface<br>
+capture traffic using filter for victim dns packets<br>
+when match, launch dnsspoof function<br><br>
 
-dnsspoof
-decode dns packets to extract website domain name
-create dns response with website domain name
-send spoof dns to victim
-print sent packet
+dnsspoof<br>
+decode dns packets to extract website domain name<br>
+create dns response with website domain name<br>
+send spoof dns to victim<br>
+print sent packet<br><br>
 
-Usage
-run
-sudo ./arpspoof.py
-and
-sudo ./main.py <interface> <ip-victim> <ip-website>
-interface=interface to sniff on and to send dns through
-ip-victim=the ip address of the victim machine
-ip-website=the ip address of the website to redirect dns to
-example:
-sudo ./main.py eth0 192.168.1.84 192.168.1.82
+Usage<br>
+run<br>
+sudo ./arpspoof.py<br>
+and<br>
+sudo ./main.py <interface> <ip-victim> <ip-website><br>
+interface=interface to sniff on and to send dns through<br>
+ip-victim=the ip address of the victim machine<br>
+ip-website=the ip address of the website to redirect dns to<br>
+example:<br>
+sudo ./main.py eth0 192.168.1.84 192.168.1.82<br>
 
