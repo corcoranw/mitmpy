@@ -5,9 +5,12 @@ python man in the middle
 
 ## Demo <br>
 
-[![MitMpy Demo]          // Title
-(https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg)] // Thumbnail
-([https://youtu.be/kwWhZuLcUEE] "mitmpy demo")    // Video Link
+
+
+https://github.com/corcoranw/mitmpy/assets/128327923/5e71d91d-7b4c-4a0e-b407-31f878eb9560
+
+
+
 
 ## Pseudocode<br>
 ### main<br>
